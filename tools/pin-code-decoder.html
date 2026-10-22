@@ -1,0 +1,39 @@
+---
+title: "PIN code & ZIP code decoder — what each digit means"
+description: "Decode any 6-digit Indian PIN code or 5-digit US ZIP code: zone, postal circle or state group, sorting district and delivery office, explained digit by digit."
+nav: tools
+type: tool
+---
+<section class="sec-tight">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Tools</a> / PIN &amp; ZIP decoder</p>
+    <h1>PIN &amp; ZIP code decoder</h1>
+    <p class="lede">Postal codes are numbers with a map hidden inside. Enter a 6-digit Indian PIN or a 5-digit US ZIP.</p>
+    <form class="decoder form" data-tool="pin" data-out="#out" id="pinf">
+      <label class="field">PIN or ZIP code<input name="code" inputmode="numeric" required placeholder="152222 or 15222" maxlength="6" autocomplete="postal-code"></label>
+      <button class="btn btn-go" type="submit">Decode</button>
+      <div class="chips"><button type="button" class="chip" data-quick="#pinf" data-field="code" data-v="110001">110001 New Delhi</button><button type="button" class="chip" data-quick="#pinf" data-field="code" data-v="226001">226001 Lucknow</button><button type="button" class="chip" data-quick="#pinf" data-field="code" data-v="400001">400001 Mumbai</button><button type="button" class="chip" data-quick="#pinf" data-field="code" data-v="15222">15222 Pittsburgh</button><button type="button" class="chip" data-quick="#pinf" data-field="code" data-v="10001">10001 New York</button></div>
+    </form>
+    <div id="out" class="result" hidden aria-live="polite"></div>
+  </div>
+</section>
+<section class="sec-tight">
+  <div class="wrap narrow">
+    <h2>How an Indian PIN code is built</h2>
+    <p>India Post introduced the six-digit Postal Index Number on 15 August 1972. It works left to right, from broad to precise:</p>
+    <div class="tbl-wrap"><table><thead><tr><th>Digit(s)</th><th>Meaning</th><th>Example: 226001</th></tr></thead><tbody>
+      <tr><td class="num">1st</td><td>Zone — 1–8 are geographic regions, 9 is the Army Postal Service</td><td>2 = North (UP, Uttarakhand)</td></tr>
+      <tr><td class="num">1st–2nd</td><td>Sub-zone / postal circle</td><td>22 = Uttar Pradesh</td></tr>
+      <tr><td class="num">1st–3rd</td><td>Sorting district</td><td>226 = Lucknow</td></tr>
+      <tr><td class="num">4th–6th</td><td>Delivery post office</td><td>001 = the head office</td></tr>
+    </tbody></table></div>
+    <h3>Zones at a glance</h3>
+    <p>1 Delhi, Haryana, Punjab, Himachal, J&amp;K · 2 Uttar Pradesh, Uttarakhand · 3 Rajasthan, Gujarat · 4 Maharashtra, Goa, MP, Chhattisgarh · 5 Telangana, Andhra Pradesh, Karnataka · 6 Tamil Nadu, Kerala · 7 West Bengal, Odisha, North-East · 8 Bihar, Jharkhand · 9 Army Postal Service.</p>
+    <h2>How a US ZIP code is built</h2>
+    <p>The first digit is one of ten national areas running roughly from the north-east (0) to the west coast (9). The first three digits identify the sectional centre facility that sorts the mail, and the last two the delivery area. Example: <span class="mono">15222</span> — 1 (NY, PA, DE), 152 (Pittsburgh area), 22 (downtown and the Strip District).</p>
+    <h2>Is 152222 a PIN code?</h2>
+    <p>Structurally, 152222 decodes to zone 1 and the 15 range, which India Post uses for Punjab. Whether a delivery office uses exactly that number changes over time, so always confirm on <a href="https://www.indiapost.gov.in" target="_blank" rel="noopener">India Post</a>. Read our <a href="../the-number-152222.html">profile of 152222</a> for every other reading of the number.</p>
+    <h3 class="mt2">Related</h3>
+    <div class="pill-row"><a class="chip" href="../guides/how-pin-codes-work.html">Guide: how PIN codes work</a><a class="chip" href="../number.html">Number decoder</a></div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+---
+title: "Lucky number generator — random numbers, optionally matched to your birth date"
+description: "Generate random numbers in any range with a cryptographic random source. Optional: keep only numbers whose root is friendly to your Mulank. Unique, sorted, up to 100 at once."
+nav: tools
+type: tool
+---
+<section class="sec-tight">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Tools</a> / Lucky number generator</p>
+    <h1>Lucky number generator</h1>
+    <p class="lede">Truly random numbers for draws, games, raffles and decisions — or a "lucky" set filtered by your birth numbers.</p>
+    <form class="decoder form" data-tool="lucky" data-out="#out" style="max-width:720px">
+      <div class="f2">
+        <label class="field">From<input type="number" name="lo" value="1" required></label>
+        <label class="field">To<input type="number" name="hi" value="99" required></label>
+      </div>
+      <div class="f2">
+        <label class="field">How many<input type="number" name="count" value="6" min="1" max="100" required></label>
+        <label class="field">Date of birth <small>(optional)</small><input type="date" name="dob"></label>
+      </div>
+      <div class="row">
+        <label class="check"><input type="checkbox" name="unique" checked> No repeats</label>
+        <label class="check"><input type="checkbox" name="sort" checked> Sort</label>
+        <label class="check"><input type="checkbox" name="match"> Only numbers friendly to my Mulank</label>
+      </div>
+      <button class="btn btn-go" type="submit">Generate</button>
+    </form>
+    <div id="out" class="result" hidden aria-live="polite"></div>
+  </div>
+</section>
+<section class="sec-tight">
+  <div class="wrap narrow">
+    <h2>Honest note on luck</h2>
+    <p>Every combination in a fair draw has exactly the same chance. A "lucky" filter changes which numbers you pick, never your odds. If you play a lottery, the only thing your choice can influence is how many people you share a prize with — popular picks like birthdays (1–31) and patterns are shared more often.</p>
+    <p>This generator uses <code>crypto.getRandomValues</code>, the same source browsers use for security, rather than a predictable pseudo-random formula. Use it for classroom draws, giveaway winners, game nights or settling who buys coffee.</p>
+    <p class="notice">If gambling stops being fun, step away and seek support from a local helpline.</p>
+    <h3>Related</h3>
+    <div class="pill-row"><a class="chip" href="life-path.html">Find my Mulank</a><a class="chip" href="../contests.html">This month's Number Hunt</a></div>
+  </div>
+</section>

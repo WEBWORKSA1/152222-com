@@ -1,0 +1,15 @@
+title: 152222 Number Lab
+description: Decode any number — free numerology, angel number, mobile number, vehicle number, PIN code and number-fact tools.
+url: https://152222.com
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - PROMPTS.md
+  - RESEARCH.md
+  - .gitignore
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

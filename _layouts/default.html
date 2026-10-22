@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.url == '/' or page.url == '/index.html' %}{{ page.title | escape }}{% else %}{{ page.title | escape }} | 152222 Number Lab{% endif %}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="https://152222.com{{ page.url | replace: 'index.html', '' }}">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta name="theme-color" content="#14161B">
+<meta property="og:type" content="{% if page.type == 'article' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="152222 Number Lab">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="https://152222.com{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"152222 Number Lab","url":"https://152222.com/","potentialAction":{"@type":"SearchAction","target":"https://152222.com/number.html?n={number}","query-input":"required name=number"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"152222 Number Lab","url":"https://152222.com/","logo":"https://152222.com/assets/img/favicon.svg"}</script>
+{% if page.type == 'article' %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ site.time | date: '%Y-%m-%d' }}","mainEntityOfPage":"https://152222.com{{ page.url }}","author":{"@type":"Organization","name":"152222 Number Lab editors"},"publisher":{"@type":"Organization","name":"152222.com"}}</script>{% endif %}
+{% if page.type == 'tool' %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":"https://152222.com{{ page.url }}"}</script>{% endif %}
+</head>
+<body class="{{ page.bodyclass }}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="ownerbar"><a href="https://web.works/contact" target="_blank" rel="noopener"><strong>Contact</strong>, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership <span aria-hidden="true">&rarr;</span></a></div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ site.baseurl }}/index.html" aria-label="152222 Number Lab home"><span class="brand-num">152222</span><span class="brand-name">Number&nbsp;Lab</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav"><span></span><span></span><span class="vh">Menu</span></button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="{{ site.baseurl }}/tools/index.html"{% if page.nav == 'tools' %} aria-current="page"{% endif %}>Tools</a>
+      <a href="{{ site.baseurl }}/angel-numbers.html"{% if page.nav == 'angel' %} aria-current="page"{% endif %}>Angel numbers</a>
+      <a href="{{ site.baseurl }}/guides/index.html"{% if page.nav == 'guides' %} aria-current="page"{% endif %}>Guides</a>
+      <a href="{{ site.baseurl }}/videos.html"{% if page.nav == 'videos' %} aria-current="page"{% endif %}>Videos</a>
+      <a href="{{ site.baseurl }}/contests.html"{% if page.nav == 'contests' %} aria-current="page"{% endif %}>Contests</a>
+      <a href="{{ site.baseurl }}/support.html"{% if page.nav == 'support' %} aria-current="page"{% endif %}>Support</a>
+      <a class="btn btn-go" href="{{ site.baseurl }}/report.html">Get your number report</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+{{ content }}</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="{{ site.baseurl }}/index.html"><span class="brand-num">152222</span><span class="brand-name">Number&nbsp;Lab</span></a>
+        <p class="muted">Free tools that decode any number — its maths, its patterns, and what cultures, markets and traditions read into it. Built for curious people, buyers of VIP numbers, founders naming brands, and anyone who keeps seeing the same digits.</p>
+        <form class="form" data-form="newsletter" data-ok="Subscribed. One number-of-the-week email, no spam.">
+          <label class="field"><span class="vh">Email for the Number of the Week</span>
+          <div class="nl"><input type="email" name="email" required placeholder="Get the Number of the Week" autocomplete="email"><button class="btn btn-go" type="submit">Join</button></div></label>
+          <div class="hp"><input name="_hp" tabindex="-1" autocomplete="off" aria-hidden="true"></div>
+          <input type="hidden" name="form" value="Newsletter signup">
+          <div class="form-msg" role="status"></div>
+        </form>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/number.html">Number decoder</a></li>
+          <li><a href="{{ site.baseurl }}/tools/mobile-number.html">Mobile number numerology</a></li>
+          <li><a href="{{ site.baseurl }}/tools/vip-number-score.html">VIP number score</a></li>
+          <li><a href="{{ site.baseurl }}/tools/life-path.html">Life path &amp; Mulank</a></li>
+          <li><a href="{{ site.baseurl }}/tools/name-numerology.html">Name &amp; business name</a></li>
+          <li><a href="{{ site.baseurl }}/tools/vehicle-number.html">Vehicle number</a></li>
+          <li><a href="{{ site.baseurl }}/tools/house-number.html">House number</a></li>
+          <li><a href="{{ site.baseurl }}/tools/pin-code-decoder.html">PIN &amp; ZIP decoder</a></li>
+          <li><a href="{{ site.baseurl }}/tools/lucky-number.html">Lucky number generator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/the-number-152222.html">The number 152222</a></li>
+          <li><a href="{{ site.baseurl }}/angel-numbers.html">Angel number library</a></li>
+          <li><a href="{{ site.baseurl }}/guides/index.html">All guides</a></li>
+          <li><a href="{{ site.baseurl }}/guides/vip-mobile-numbers-guide.html">Buying a VIP number</a></li>
+          <li><a href="{{ site.baseurl }}/guides/numbers-in-pricing.html">Numbers in pricing</a></li>
+          <li><a href="{{ site.baseurl }}/guides/numeric-domain-names.html">Numeric domain names</a></li>
+          <li><a href="{{ site.baseurl }}/guides/how-ai-reads-numbers.html">How AI reads numbers</a></li>
+          <li><a href="{{ site.baseurl }}/videos.html">Videos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>152222.com</h4>
+        <ul>
+          <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+          <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+          <li><a href="{{ site.baseurl }}/report.html">Number report</a></li>
+          <li><a href="{{ site.baseurl }}/advertise.html">Advertise &amp; partner</a></li>
+          <li><a href="{{ site.baseurl }}/careers.html">Work with us</a></li>
+          <li><a href="{{ site.baseurl }}/contests.html">Contests &amp; prizes</a></li>
+          <li><a href="{{ site.baseurl }}/support.html">Support the lab</a></li>
+          <li><a href="{{ site.baseurl }}/privacy.html">Privacy &amp; cookies</a></li>
+          <li><a href="{{ site.baseurl }}/terms.html">Terms of use</a></li>
+          <li><a href="{{ site.baseurl }}/disclaimer.html">Disclaimer &amp; trademarks</a></li>
+          <li><a href="{{ site.baseurl }}/sitemap.html">Site map</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p><strong>Trademark &amp; copyright notice.</strong> "152222" is a six-digit number. It is used here only as a number and as this site's domain name; no claim of exclusive rights in the number is made, and this site is not affiliated with any company, product, postal authority, patent, telephone number or registration that shares these digits. Third-party names and logos belong to their owners and are used only to identify them. Site text, design and tools &copy; <span data-year></span> 152222.com. All rights reserved.</p>
+      <p>Numerology, angel numbers and lucky-number traditions are presented as culture and entertainment, not as scientific, financial, legal or medical advice. Maths results are computed in your browser. Some pages contain advertising; see the <a href="{{ site.baseurl }}/disclaimer.html">Disclaimer</a> and <a href="{{ site.baseurl }}/privacy.html">Privacy policy</a>.</p>
+    </div>
+  </div>
+</footer>
+{% unless page.sticky == 'no' %}<div class="sticky-cta"><a class="btn btn-go btn-block" href="{{ site.baseurl }}/report.html">Get a personal number report &rarr;</a></div>{% endunless %}
+<div class="cookie" role="dialog" aria-label="Cookies notice">
+  <p><strong>Cookies and ads.</strong> We use cookies to run the site, measure traffic and show ads through Google AdSense, which may personalise ads. <a href="{{ site.baseurl }}/privacy.html">Read how</a>.</p>
+  <div class="row"><button class="btn btn-go" data-cookie="all">Accept</button><button class="btn btn-line" data-cookie="essential">Essential only</button></div>
+</div>
+<script src="{{ site.baseurl }}/assets/js/config.js"></script>
+<script src="{{ site.baseurl }}/assets/js/numbers.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+</body>
+</html>

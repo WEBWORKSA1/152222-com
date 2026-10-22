@@ -1,0 +1,41 @@
+---
+title: "VIP number score — rate any phone or numeric string for memorability"
+description: "Score a mobile number, numeric domain or code from 0 to 100 for memorability: repeating digits, sequences, mirrors and few distinct digits. Free VIP / fancy number checker."
+nav: tools
+type: tool
+---
+<section class="sec-tight">
+  <div class="wrap">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Tools</a> / VIP number score</p>
+    <h1>VIP number score</h1>
+    <p class="lede">Why do some numbers sell for hundreds of times the price of others? Memorability. Score any number and see exactly which patterns it has.</p>
+    <form class="decoder form" data-tool="vip" data-out="#out" id="vipf">
+      <label class="field">Phone number, numeric domain or any digits<input name="num" inputmode="numeric" required placeholder="9999 152222" autocomplete="off"></label>
+      <button class="btn btn-go" type="submit">Score it</button>
+      <div class="chips"><button type="button" class="chip" data-quick="#vipf" data-field="num" data-v="9999999999">9999999999</button><button type="button" class="chip" data-quick="#vipf" data-field="num" data-v="9876543210">9876543210</button><button type="button" class="chip" data-quick="#vipf" data-field="num" data-v="9812121212">9812121212</button><button type="button" class="chip" data-quick="#vipf" data-field="num" data-v="152222">152222</button><button type="button" class="chip" data-quick="#vipf" data-field="num" data-v="9415273860">9415273860</button></div>
+    </form>
+    <div id="out" class="result" hidden aria-live="polite"></div>
+  </div>
+</section>
+<section class="sec-tight">
+  <div class="wrap narrow">
+    <h2>What the score rewards</h2>
+    <div class="tbl-wrap"><table><thead><tr><th>Pattern</th><th>Example</th><th>Why it's valued</th></tr></thead><tbody>
+      <tr><td>Repdigit</td><td class="num">9999999999</td><td>The rarest and easiest to recall; top of every seller's price list</td></tr>
+      <tr><td>Long run</td><td class="num">98 000 00 123</td><td>Five or more identical digits in a row</td></tr>
+      <tr><td>Straight sequence</td><td class="num">…123456</td><td>Reads like counting</td></tr>
+      <tr><td>Mirror</td><td class="num">98 765 56 789</td><td>Symmetry is easy to picture</td></tr>
+      <tr><td>Repeated block</td><td class="num">98 12 12 12 12</td><td>Remember two digits, repeat</td></tr>
+      <tr><td>Strong ending</td><td class="num">…7777</td><td>People remember the tail of a number best</td></tr>
+      <tr><td>Few distinct digits</td><td class="num">90 900 90 009</td><td>Less to remember</td></tr>
+    </tbody></table></div>
+    <h2>Tiers</h2>
+    <p><strong>Platinum (85+)</strong> — repdigits and near-repdigits. <strong>Gold (70–84)</strong> — long runs, full sequences, mirrors. <strong>Silver (50–69)</strong> — one strong pattern. <strong>Standard</strong> — ordinary numbers. The tiers mirror how VIP number sellers group their stock, but the score is a pattern measure, not a price.</p>
+    <div class="callout"><p><strong>Buying a VIP number?</strong> Read the <a href="../guides/vip-mobile-numbers-guide.html">buyer's guide</a> first — it covers ownership, KYC, porting and the scams to avoid. Or <a href="../report.html?for=vip">request a number</a> and we'll check availability with vetted sellers.</p></div>
+    <h2>FAQ</h2>
+    <details><summary>Does the score work for numeric domains?</summary><div><p>Yes. The same memorability signals apply to domains like 888888.com or 152222.com. Domain value also depends on length, extension and buyer demand.</p></div></details>
+    <details><summary>Is a higher score always better?</summary><div><p>For recall, yes. For privacy, a very memorable number is also easier for strangers to guess and spam.</p></div></details>
+    <h3 class="mt2">Related</h3>
+    <div class="pill-row"><a class="chip" href="mobile-number.html">Mobile numerology</a><a class="chip" href="../guides/numeric-domain-names.html">Numeric domain names</a><a class="chip" href="../number.html">Full number decoder</a></div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+title: "How AI reads numbers: tokens, arithmetic slips and why models use tools"
+description: "Why AI chatbots can fumble numbers: tokenization splits digits into chunks, models predict text rather than calculate, and the fix is calculators and code. Practical tips for using AI with numbers."
+nav: guides
+type: article
+---
+<article class="article">
+  <div class="wrap narrow">
+    <p class="crumbs"><a href="../index.html">Home</a> / <a href="index.html">Guides</a> / How AI reads numbers</p>
+    <span class="eyebrow">AI</span>
+    <h1>How AI reads numbers</h1>
+    <p class="byline">152222 Number Lab editors · 6 min read</p>
+    <p class="lede">An AI model can explain calculus and then slip on 152222 × 7. Here's why — and how to get reliable numbers out of AI.</p>
+    <h2>Step 1: numbers become tokens</h2>
+    <p>Language models don't read characters; they read <strong>tokens</strong>, chunks of text from a fixed vocabulary. How numbers get chunked depends on the tokenizer. Some popular tokenizers group digits into runs of up to three, so 152222 might become <span class="mono">152 | 222</span>. Others, such as the original LLaMA models, split every number into single digits. A model that sees <span class="mono">152 | 222</span> has to learn that the second chunk is worth hundreds while the first is worth hundreds of thousands — positional value is something it must infer, not something it's given.</p>
+    <h2>Step 2: the model predicts, it doesn't calculate</h2>
+    <p>A language model produces the most plausible next token. For familiar facts (7 × 8 = 56) that works because the answer appears countless times in training text. For a fresh multiplication of two six-digit numbers, there is no memorised answer; the model must carry digits across chunk boundaries in its head, so to speak, and small errors creep in. Famous slips — like a model insisting 9.11 is larger than 9.9, perhaps because it reads them like version numbers — come from text patterns overriding arithmetic.</p>
+    <h2>Step 3: the fix is tools</h2>
+    <p>Modern assistants increasingly hand arithmetic to a calculator or run code, then report the result. That's the same approach this site uses: every number on 152222 Number Lab is computed by deterministic code in your browser, never "predicted".</p>
+    <h2>Tips for using AI with numbers</h2>
+    <ul class="ticks">
+      <li>Ask the assistant to <strong>use code or a calculator</strong> for any arithmetic that matters.</li>
+      <li>Ask it to <strong>show working</strong> — errors become visible.</li>
+      <li>For money, tax or dosage, <strong>verify independently</strong>.</li>
+      <li>Give numbers in a <strong>consistent format</strong> (1,52,222 vs 152,222 can confuse both people and models).</li>
+      <li>Use AI for what it's great at — explaining, structuring, drafting — and tools for exact results.</li>
+    </ul>
+    <h2>Numbers and AI in business</h2>
+    <p>Retailers use machine-learning models to set prices (often still ending in 9), banks use them to flag unusual transactions, and auditors combine models with statistical tests like <a href="benfords-law.html">Benford's law</a>. In all of these, the model's job is pattern-finding; the arithmetic underneath is ordinary computation.</p>
+    <p>Try it yourself: put any number into the <a href="../number.html">decoder</a> and compare with your favourite chatbot.</p>
+  </div>
+</article>
